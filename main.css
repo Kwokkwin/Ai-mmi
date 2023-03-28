@@ -88,7 +88,6 @@
     cursor: pointer;
 }
 
-
 .row::after {
     content: "";
     clear: both;
@@ -98,7 +97,7 @@
 
 [class*="col-"] {
     float: left;
-    padding: 0;
+    padding: 20px;
 
 }
 
@@ -213,11 +212,9 @@
 
 
 
-
-
 .hero-image-left {
-    background: url("images/Sydney_Opera_House_Sails.jpg") no-repeat center;
-    background-size: cover;
+    background: url("images/london-7554835.jpg") no-repeat top;
+    background-size: contain;
     height: 600px;
     position: relative;
 }
