@@ -2,65 +2,27 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
-    background-color: white
-}
-
-.flex-container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    background-color: #192a3d;
-    
-}
-
-.flex-container>div {
-    background-color: #192a3d;
-    color: white;
-    margin: 10px;
-    text-align: right;
-    line-height: 20px;
-    font-size: 20px;
-}
-
-
-.flex-container a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    transition: all 0.3s ease;
-    color:  #192a3d;
-    font-size: 26px;
-  } 
-
-.flex-container a:hover {
-    background-color:  #192a3d; 
-} 
-
 .navbar {
     overflow: hidden;
-    background-color: white;
+    background-color: #333;
 }
 
 .navbar a {
     float: left;
-    font-size: 30px;
+    font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.dropdown {
-    float: left;
+.subnav {
+    float: right;
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
-    font-size: 30px;
+.subnav .subnavbtn {
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -71,35 +33,61 @@ body {
 }
 
 .navbar a:hover,
-.dropdown:hover .dropbtn {
-    background-color: inherit;
+.subnav:hover .subnavbtn {
+    background-color: #333;
 }
 
-.dropdown-content {
+.subnav-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #333;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
+.subnav-content a {
+    float: left;
+    color: white;
     text-decoration: none;
-    display: block;
-    text-align: left;
 }
 
-.dropdown-content a:hover {
-    background-color: #7a7a7a;
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
 }
 
-.dropdown:hover .dropdown-content {
+.subnav:hover .subnav-content {
     display: block;
 }
+
+.navlogo {
+    float: left;
+    overflow: hidden;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.subnavbtn1 {
+    float: left;
+    overflow: hidden;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
 
 .row::after {
     content: "";
@@ -107,9 +95,10 @@ body {
     display: table;
 }
 
+
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 0;
 
 }
 
@@ -222,19 +211,24 @@ body {
     }
 }
 
+
+
+
+
 .hero-image-left {
     background: url("images/Sydney_Opera_House_Sails.jpg") no-repeat center;
     background-size: cover;
     height: 600px;
     position: relative;
-}  
+}
+
 
 .hero-image-right {
     background: url("images/AI.png") no-repeat center;
     background-size: cover;
     height: 200px;
     position: relative;
-}  
+}
 
 .hero-text {
     text-align: center;
