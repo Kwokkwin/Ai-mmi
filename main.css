@@ -2,12 +2,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --basebackgrounds:
+        url(file:///Users/rebecca/Desktop/ai-mmi/images/london-7554835.jpg),
+        url(file:///Users/rebecca/Desktop/ai-mmi/images/new-york-4756152.jpg),
+        url(file:///Users/rebecca/Desktop/ai-mmi/images/skyline-890084.jpg);
+}
+
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: grey;
+    background-image: var(--basebackgrounds);
+    background-size: cover;
 }
-
 
 .navbar {
     overflow: hidden;
@@ -244,39 +252,4 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-}
-
-#container {
-    width: 400px;
-    height: 300px;
-    overflow: hidden;
-}
-
-#photo {
-    width: 1200px;
-    animation: switch 5s ease-out infinite;
-}
-
-#photo>img {
-    float: left;
-    width: 400px;
-    height: 300px;
-}
-
-@keyframes switch {
-
-    0%,
-    25% {
-        margin-left: 0;
-    }
-
-    35%,
-    60% {
-        margin-left: -400px;
-    }
-
-    70%,
-    100% {
-        margin-left: -800px;
-    }
 }
