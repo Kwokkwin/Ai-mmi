@@ -4,9 +4,9 @@
 
 :root {
     --basebackgrounds:
-        url(file:///Users/rebecca/Desktop/ai-mmi/images/london-7554835.jpg),
-        url(file:///Users/rebecca/Desktop/ai-mmi/images/new-york-4756152.jpg),
-        url(file:///Users/rebecca/Desktop/ai-mmi/images/skyline-890084.jpg);
+        url(./images/london-7554835.jpg),
+        url(./images/new-york-4756152.jpg),
+        url(./images/skyline-890084.jpg);
 }
 
 
