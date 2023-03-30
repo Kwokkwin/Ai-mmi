@@ -1,18 +1,11 @@
 'use strict';
 
-const switcher = document.querySelector('.btn');
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
 
-switcher.addEventListener('click', function() {
-    document.body.classList.toggle('light-theme');
-    document.body.classList.toggle('dark-theme');
-
-    const className = document.body.className;
-    if(className == "light-theme") {
-        this.textContent = "Dark";
-    } else {
-        this.textContent = "Light";
-    }
-
-    console.log('current class name: ' + className);
-    
-});
