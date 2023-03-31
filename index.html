@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" />
     <link rel="stylesheet" href="main.css">
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
 </head>
 
@@ -57,47 +58,83 @@
 
     </div>
 
-
-
-    <div class="row" style="height:700px">
-        <div class="col-6">
+    <div class="row" style="height:700px;">
+        <div class="col-6" style="text-align: center;margin: auto;">
             <!-- <div class="hero-image-left"> -->
-            <div style="text-align: center">
-                <h1 style="font-size:50px">Meet AI-mmi</h1>
-                <h3>Your AI robotic Immigration Consultant</h3>
-                <p>Let the AI-mmi, our robotic migration consultant <br /> help you with your immigration plan and
-                    process.</p>
+            <div>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <h1>Meet AI-mmi</h1>
+                <h2>Your AI robotic Immigration Consultant</h2>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <h4>Let the AI-mmi, our robotic migration consultant <br /> help you with your immigration plan and
+                    process.</h4>
             </div>
             <!-- </div>  -->
         </div>
         <div class="col-6">
             <div style="text-align: center">
-                <!-- <iframe src="./videos/AI.mp4" height="300" width="450px" allow="autoplay;fullscreen"></iframe> -->
-                <video id="myVideo" src="./videos/AI.mp4" height="300" width="450px"></video> 
-                <script>
-                    let video = document.getElementById("myVideo");
-                    if (navigator && navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-                      navigator.mediaDevices.getUserMedia({audio: true}).then((mediastream) => {
-                        video.play();
-                      }).catch((err) => {
-                         // show play button or mute video then play again
-                        alert("getUserMedia error");
-                        console.log('getUserMedia Error:', err);
-                      });
-                    } else {
-                      alert("not support getUserMedia");
-                    }
-                  </script>
+                <br /><br />
                 <p>Am I qualified to migrate?<br>
                     Which country and visa option(s) best suit me?<br>
                     What are the requirements?<br>
                     How much does it cost?<br>
                     How can I apply?<br>
                 </p>
-                <button>Start Here</button>
+                <br /><br />
+
+                <!-- <iframe src="./videos/AI.mp4" height="300" width="450px" allow="autoplay;fullscreen"></iframe> -->
+                <video id="myVideo" src="./videos/AI.mp4" height="300" width="450px"></video>
+                <script>
+                    let video = document.getElementById("myVideo");
+                    if (navigator && navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                        navigator.mediaDevices.getUserMedia({ audio: true }).then((mediastream) => {
+                            video.play();
+                        }).catch((err) => {
+                            // show play button or mute video then play again
+                            alert("getUserMedia error");
+                            console.log('getUserMedia Error:', err);
+                        });
+                    } else {
+                        alert("not support getUserMedia");
+                    }
+                </script>
+                <br /><br />
+                <button class="button">Start Here</button>
             </div>
         </div>
     </div>
+    <div style="text-align: center"> WHY CHOOSE AI-mmi</div>
+
+    <div>
+        <div class="col-4" style="text-align: center">
+            <div class="">
+                <img src="images/circle.png" alt="Quicker Response Figure">
+                <div class="">
+                    <p>Quicker Response</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4" style="text-align: center">
+            <div class="">
+                <img src="images/circle.png" alt="Quicker Response Figure">
+                <div class="">
+                    <p>Better Results</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" style="text-align: center">
+            <div class="">
+                <img src="images/circle.png" alt="Quicker Response Figure">
+                <div class="">
+                    <p>Lower Costs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center">HOW DOES IT WORK</div>
+    <div style="height:700px"></div>
 </body>
 
 
