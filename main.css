@@ -4,15 +4,24 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Britannic';
+    src: url('./fonts/Britannic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 body {
-    font-family: "Suisse Intl", "Helvetica", "Arial", sans-serif;
-    background-image: url("./images/toronto-73508.jpg");
+    font-family: 'Britannic', 'Berkshire Swash', 'cursive';
+    background-image: url("./images/Toronto0.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.43;
     letter-spacing: 0.01071em;
     overflow-x: hidden;
 }
+
 
 video {
     mix-blend-mode: screen;
@@ -21,13 +30,15 @@ video {
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-image: linear-gradient(to bottom, rgb(0,7,20)d , yellow);
+    /* background-color:rgb(0,7,20); */
 }
 
 .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    /* color:rgb(0,7,20); */
+    background-image: linear-gradient(to bottom, rgb(0,7,20)d , yellow);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,7 +55,8 @@ video {
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: inherit;
+    background-color: inherit; 
+    /* background-image: linear-gradient(to bottom, rgb(0,7,20)d , yellow); */
     font-family: inherit;
     margin: 0;
     cursor: pointer;
@@ -53,13 +65,15 @@ video {
 
 .navbar a:hover,
 .subnav:hover .subnavbtn {
-    background-color: #333;
+    /* background-color: rgb(0,7,20); */
+    background-image: linear-gradient(to bottom, rgb(0,7,20)d , yellow);
 }
 
 .subnav-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: inherit;
+    /* background-image: linear-gradient(to bottom, rgb(0,7,20)d , yellow); */
     max-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -73,7 +87,7 @@ video {
 }
 
 .subnav-content a:hover {
-    background-color: #eee;
+    background-color: yellow;
     color: black;
 }
 
@@ -108,139 +122,40 @@ video {
     cursor: pointer;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-[class*="col-"] {
+#lDiv {
     float: left;
-    padding: 15px;
-    vertical-align: middle; 
+    vertical-align: bottom;
+    color: white;
     text-align: center;
     margin: auto;
-  }
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+    width: 50%;
 }
 
-@media only screen and (min-width: 600px) {
-
-    /* For tablets: */
-    .col-s-1 {
-        width: 8.33%;
-    }
-
-    .col-s-2 {
-        width: 16.66%;
-    }
-
-    .col-s-3 {
-        width: 25%;
-    }
-
-    .col-s-4 {
-        width: 33.33%;
-    }
-
-    .col-s-5 {
-        width: 41.66%;
-    }
-
-    .col-s-6 {
-        width: 50%;
-    }
-
-    .col-s-7 {
-        width: 58.33%;
-    }
-
-    .col-s-8 {
-        width: 66.66%;
-    }
-
-    .col-s-9 {
-        width: 75%;
-    }
-
-    .col-s-10 {
-        width: 83.33%;
-    }
-
-    .col-s-11 {
-        width: 91.66%;
-    }
-
-    .col-s-12 {
-        width: 100%;
-    }
+#rDiv {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%
 }
 
-@media only screen and (min-width: 768px) {
-
-    /* For desktop: */
-    .col-1 {
-        width: 8.33%;
-    }
-
-    .col-2 {
-        width: 16.66%;
-    }
-
-    .col-3 {
-        width: 25%;
-    }
-
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
-    }
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 60Px;
 }
 
 .button {
     background-color: yellow;
     border: none;
+    font-family:'Britannic';
     color: black;
-    padding: 15px 32px;
+    font-weight:bolder;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 20px;
+    font-size: 1.5em;
+    border-radius: 10px;
     cursor: pointer;
 
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,11 +25,11 @@
         </div>
 
         <div class="subnav">
-            <button class="subnavbtn">English</button>
+            <button class="subnavbtn">En</button>
             <div class="subnav-content">
-                <a href="#team">English</a>
-                <a href="#team">简体中文</a>
-                <a href="#careers">繁體中文</a>
+                <a href="#team">En</a>
+                <a href="#team">简体</a>
+                <a href="#careers">繁體</a>
             </div>
         </div>
         <div class="subnav">
@@ -40,14 +41,14 @@
         </div>
 
         <div class="subnav">
-            <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+            <button class="subnavbtn">About</i></button>
             <div class="subnav-content">
                 <a href="#Company">Company</a>
                 <a href="#Team">Team</a>
             </div>
         </div>
         <div class="subnav">
-            <button class="subnavbtn">Migrate <i class="fa fa-caret-down"></i></button>
+            <button class="subnavbtn">Migrate</button>
             <div class="subnav-content">
                 <a href="#Australia">Australia</a>
                 <a href="#Canada">Canada</a>
@@ -57,41 +58,39 @@
 
     </div>
 
-    <div class="row">
-        <div class="col-6 col-s-6">
-            <div>
-                <br /><br /><br /><br /><br />
-                <h1 style="font-size: 4rem; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:white;">Meet AI-mmi</h1>
-                <br />
-                <h1 style="font-size: 2rem;color:white;">Your AI robotic Immigration Consultant</h1>
-            </div>
-            <br /><br /><br /><br /><br /><br /><br />
-            <div style="background-color:rgb(47, 47, 144);width: fit-content;Margin:auto;">
-                <h1 style="font-size: 2rem;color:white;">Need helps with your visa? <br />
-                    Get help from AI-mmi</h1>
-            </div>
+    <div id="lDiv">
+        <div>
+            <br /><br /><br /><br /><br />
+            <h1 style="font-size: 2rem;">Migration Gets Easier</h1>
+            <h1 style="font-size: 5rem;">AI-mmi</h1>
         </div>
-        <div class="col-6 col-s-6">
-            <div>
-                <video id="myVideo" src="./videos/AI.mp4" height="500px" width="500px"></video>
-                <script>
-                    let video = document.getElementById("myVideo");
-                    if (navigator && navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-                        navigator.mediaDevices.getUserMedia({ audio: true }).then((mediastream) => {
-                            video.play();
-                        }).catch((err) => {
-                            // show play button or mute video then play again
-                            alert("getUserMedia error");
-                            console.log('getUserMedia Error:', err);
-                        });
-                    } else {
-                        alert("not support getUserMedia");
-                    }
-                </script>
-                <br />
-                <button class="button" onclick="window.location.href = 'main.html';">Start Here</button>
-            </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div>
+            <h1 style="font-size: 1.5rem;">Get help from<br /></h1>
+            <h1 style="font-size: 1rem;">Your AI robotic Immigration Consultant <br /></h1>
+            <br />
+            <button class="button" onclick="window.location.href = 'main.html';">Start Here</button>
+
         </div>
+    </div>
+    <div id="rDiv">
+        <!-- <image id="myVideo" src="./images/AI.png" height="405.6px" width="336px"></image> -->
+        <video id="myVideo" src="./videos/AI.mp4" height="608.4px" width="504px"></video>
+        <script>
+            let video = document.getElementById("myVideo");
+            if (navigator && navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ audio: true }).then((mediastream) => {
+                    video.play();
+                }).catch((err) => {
+                    // show play button or mute video then play again
+                    alert("getUserMedia error");
+                    console.log('getUserMedia Error:', err);
+                });
+            } else {
+                alert("not support getUserMedia");
+            }
+        </script>
+    </div>
     </div>
 </body>
 
