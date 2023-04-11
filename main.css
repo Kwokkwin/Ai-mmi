@@ -130,6 +130,11 @@ video {
     margin: auto;
     width: 50%;
 }
+
+#tDiv {
+    margin-top: 100px; 
+}
+
 #bDiv {
     margin-top: 300px; 
 }
@@ -175,6 +180,10 @@ video {
         right: 0;
         bottom: 0;
         width: 100%
+    }
+
+    #tDiv {
+        margin-top: 0px; 
     }
 
     #bDiv {
