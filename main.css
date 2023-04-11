@@ -138,12 +138,27 @@ video {
     width: 50%
 }
 
+
+
 #myVideo {
     position: absolute;
-    right: 0;
-    bottom: 60Px;
+    right: 0px;
+    bottom: 0Px;
+    height:408px;    
+    width:508px;
 }
 
+@media screen and (max-width: 600px) {
+    #myVideo {
+        position: absolute;
+        right: 0px;
+        bottom: 0Px;
+        height:108px;    
+        width:108px;
+    }
+  }
+
+  
 .button {
     background-color: yellow;
     border: none;
