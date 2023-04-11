@@ -156,9 +156,26 @@ video {
         height:108px;    
         width:108px;
     }
+
+    #lDiv {
+        float: left;
+        vertical-align: bottom;
+        color: white;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    
+    #rDiv {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%
+    }
+
   }
 
-  
+
 .button {
     background-color: yellow;
     border: none;
