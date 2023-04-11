@@ -130,6 +130,9 @@ video {
     margin: auto;
     width: 50%;
 }
+#bDiv {
+    margin-top: 300px; 
+}
 
 #rDiv {
     position: absolute;
@@ -168,9 +171,14 @@ video {
     
     #rDiv {
         position: absolute;
+        float:left;
         right: 0;
         bottom: 0;
         width: 100%
+    }
+
+    #bDiv {
+        margin-top: 0px; 
     }
 
   }
