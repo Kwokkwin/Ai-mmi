@@ -45,7 +45,7 @@ video {
 
 .navbar a {
     float: left;
-    font-size: 0.7rem;
+    font-size: 1rem;
     /* color:rgb(0,7,20); */
     background-image: linear-gradient(to bottom, rgb(0, 7, 20)d, yellow);
     text-align: center;
@@ -60,7 +60,7 @@ video {
 
 .subnav .subnavbtn {
     overflow: hidden;
-    font-size: 0.7rem;
+    font-size: 1rem;
     border: none;
     outline: none;
     color: white;
@@ -121,7 +121,7 @@ video {
     color: white;
     text-align: center;
     margin: auto;
-    width: 50%;
+    width: 100%;
     
 }
 
@@ -129,7 +129,7 @@ video {
     float: right;
     right: 0;
     bottom: 0;
-    width: 50%
+    width: 100%
 }
 
 #tDiv {
@@ -142,24 +142,24 @@ video {
 }
 
 #th1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #tp {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #bh1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #bp {
-    font-size: 0.6rem;
+    font-size: 1rem;
 }
 
 #myVideo {
     position: absolute;
-    right: 0px;
+    align-content: center;
     bottom: 0Px;
     height: 12rem;
     width: 16rem;
