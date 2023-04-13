@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" />
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 400px)" href="tinyScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 400px) and (max-device-width: 600px)"
+        href="smallScreen.css" />
     <script src="./app.js"></script>
     <script src="https://code.jquery.com/jquery-git.js"></script>
     <script type="text/javascript">
@@ -20,7 +23,7 @@
                 recalc = function () {
                     var clientWidth = docEl.clientWidth;
                     if (!clientWidth) return;
-                    docEl.style.fontSize = 10 * (clientWidth / 320) + 'px';//html font-size 16
+                    docEl.style.fontSize = 0.625 * 10  * (clientWidth / 320) + 'px'; //Html{font-size:62.5%(10/16*100%)}
                 };
 
             if (!doc.addEventListener) return;
@@ -77,15 +80,14 @@
         </div>
         <div id="lDiv">
             <div id="tDiv">
-                <h1 style="font-size: 1em;">Migration Gets Easier</h1>
-                <h1 style="font-size: 2em;">AI-mmi</h1>
+                <p id="tp">Migration Gets Easier</p>
+                <h1 id="th1">AI-mmi</h1>
             </div>
 
             <div id="bDiv">
-                <h1 style="font-size: 1em;">Get help from<br /></h1>
-                <h1 style="font-size: 0.5em;">Your AI robotic Immigration Consultant <br /></h1>
+                <h1 id="bh1">Get help from<br /></h1>
+                <p id="bp">Your AI robotic Immigration Consultant <br /></p>
                 <button class="button" onclick="window.location.href = 'main.html';">Start Here</button>
-
             </div>
         </div>
         <div id="rDiv">
@@ -108,10 +110,14 @@
         </div>
     </div>
 
-    <div style="float:left">
-        <p>we are testing this website
-        </p>
-    </div>
+    <!-- <div style="float: left; background-color: red; width: 100%;"> 
+        <div id="bDiv">
+            <h1 id="bh1">Get help from<br /></h1>
+            <p id="bp">Your AI robotic Immigration Consultant <br /></p>
+            <button class="button" onclick="window.location.href = 'main.html';">Start Here</button>
+
+        </div>
+    </div> -->
 </body>
 
 </html>
