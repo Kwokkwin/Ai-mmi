@@ -12,12 +12,14 @@
     font-style: normal;
 }
 
+html {    
+    background: url("./images/Toronto0.jpg") no-repeat center fixed;     
+    background-size: cover;
+}
+
 
 body {
     font-family: 'Britannic', 'Berkshire Swash', 'cursive';
-    background-image: url("./images/Toronto0.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
     line-height: 1.43;
     letter-spacing: 0.01071em;
     overflow-x: hidden;
