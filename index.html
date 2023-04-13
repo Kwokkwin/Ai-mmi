@@ -32,80 +32,85 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navlogo">
-            <img src="images/logo.png" height="25px" width="80px" alt="Company Logo">
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn" onclick="window.location.href = '#.html';" style="cursor: pointer;">Login</button>
-        </div>
+    <div id="bg_page1">
+        <div class="navbar">
+            <div class="navlogo">
+                <img src="images/logo.png" height="25px" width="80px" alt="Company Logo">
+            </div>
+            <div class="subnav">
+                <button class="subnavbtn" onclick="window.location.href = '#.html';"
+                    style="cursor: pointer;">Login</button>
+            </div>
 
-        <div class="subnav">
-            <button class="subnavbtn">En</button>
-            <div class="subnav-content">
-                <a href="#En">En</a>
-                <a href="#simplified">简体</a>
-                <a href="#chinese">繁體</a>
+            <div class="subnav">
+                <button class="subnavbtn">En</button>
+                <div class="subnav-content">
+                    <a href="#En">En</a>
+                    <a href="#simplified">简体</a>
+                    <a href="#chinese">繁體</a>
+                </div>
             </div>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn"><i class="flag-icon flag-icon-us"></i></button>
-            <div class="subnav-content">
-                <a href="#team"><i class="flag-icon flag-icon-us"></i></a>
-                <a href="#career"><i class="flag-icon flag-icon-cn"></i></a>
+            <div class="subnav">
+                <button class="subnavbtn"><i class="flag-icon flag-icon-us"></i></button>
+                <div class="subnav-content">
+                    <a href="#team"><i class="flag-icon flag-icon-us"></i></a>
+                    <a href="#career"><i class="flag-icon flag-icon-cn"></i></a>
+                </div>
             </div>
-        </div>
 
-        <div class="subnav">
-            <button class="subnavbtn">About</i></button>
-            <div class="subnav-content">
-                <a href="#Company">Company</a>
-                <a href="#Team">Team</a>
+            <div class="subnav">
+                <button class="subnavbtn">About</i></button>
+                <div class="subnav-content">
+                    <a href="#Company">Company</a>
+                    <a href="#Team">Team</a>
+                </div>
             </div>
-        </div>
-        <div class="subnav">
-            <button class="subnavbtn">Migrate</button>
-            <div class="subnav-content">
-                <a href="#Australia">Australia</a>
-                <a href="#Canada">Canada</a>
-                <a href="#Singapor">Singapor</a>
+            <div class="subnav">
+                <button class="subnavbtn">Migrate</button>
+                <div class="subnav-content">
+                    <a href="#Australia">Australia</a>
+                    <a href="#Canada">Canada</a>
+                    <a href="#Singapor">Singapor</a>
+                </div>
             </div>
-        </div>
 
+        </div>
+        <div id="lDiv">
+            <div id="tDiv">
+                <h1 style="font-size: 1em;">Migration Gets Easier</h1>
+                <h1 style="font-size: 2em;">AI-mmi</h1>
+            </div>
+
+            <div id="bDiv">
+                <h1 style="font-size: 1em;">Get help from<br /></h1>
+                <h1 style="font-size: 0.5em;">Your AI robotic Immigration Consultant <br /></h1>
+                <button class="button" onclick="window.location.href = 'main.html';">Start Here</button>
+
+            </div>
+        </div>
+        <div id="rDiv">
+            <!-- <image id="myVideo" src="./images/AI.png" height="405.6px" width="336px"></image> -->
+            <video id="myVideo" src="./videos/AI.mp4"></video>
+            <script>
+                let video = document.getElementById("myVideo");
+                if (navigator && navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                    navigator.mediaDevices.getUserMedia({ audio: true }).then((mediastream) => {
+                        video.play();
+                    }).catch((err) => {
+                        // show play button or mute video then play again
+                        alert("getUserMedia error");
+                        console.log('getUserMedia Error:', err);
+                    });
+                } else {
+                    alert("not support getUserMedia");
+                }
+            </script>
+        </div>
     </div>
 
-    <div id="lDiv">
-        <div id="tDiv">
-            <h1 style="font-size: 1em;">Migration Gets Easier</h1>
-            <h1 style="font-size: 2em;">AI-mmi</h1>
-        </div>
-
-        <div id="bDiv">
-            <h1 style="font-size: 1em;">Get help from<br /></h1>
-            <h1 style="font-size: 0.5em;">Your AI robotic Immigration Consultant <br /></h1>
-            <br />
-            <button class="button" onclick="window.location.href = 'main.html';">Start Here</button>
-
-        </div>
-    </div>
-    <div id="rDiv">
-        <!-- <image id="myVideo" src="./images/AI.png" height="405.6px" width="336px"></image> -->  
-        <video id="myVideo" src="./videos/AI.mp4"></video>
-        <script>
-            let video = document.getElementById("myVideo");
-            if (navigator && navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-                navigator.mediaDevices.getUserMedia({ audio: true }).then((mediastream) => {
-                    video.play();
-                }).catch((err) => {
-                    // show play button or mute video then play again
-                    alert("getUserMedia error");
-                    console.log('getUserMedia Error:', err);
-                });
-            } else {
-                alert("not support getUserMedia");
-            }
-        </script>
-    </div>
+    <div style="float:left">
+        <p>we are testing this website
+        </p>
     </div>
 </body>
 
