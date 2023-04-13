@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 @font-face {
     font-family: 'Britannic';
     src: url('./fonts/Britannic.ttf') format('truetype');
@@ -20,8 +21,7 @@ body {
     line-height: 1.43;
     letter-spacing: 0.01071em;
     overflow-x: hidden;
-}
-
+} 
 
 video {
     mix-blend-mode: screen;
@@ -30,17 +30,17 @@ video {
 
 .navbar {
     overflow: hidden;
-    background-image: linear-gradient(to bottom, rgb(0,7,20)d , yellow);
+    background-image: linear-gradient(to bottom, rgb(0, 7, 20)d, yellow);
     /* background-color:rgb(0,7,20); */
 }
 
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 0.375rem;
     /* color:rgb(0,7,20); */
-    background-image: linear-gradient(to bottom, rgb(0,7,20)d , yellow);
+    background-image: linear-gradient(to bottom, rgb(0, 7, 20)d, yellow);
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.375rem 0.5rem;
     text-decoration: none;
 }
 
@@ -50,35 +50,32 @@ video {
 }
 
 .subnav .subnavbtn {
-    font-size: 16px;
+    overflow: hidden;
+    font-size: 0.4rem;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
-    background-color: inherit; 
-    /* background-image: linear-gradient(to bottom, rgb(0,7,20)d , yellow); */
+    padding: 0.25rem 0.375rem;
+    background-color: inherit;
     font-family: inherit;
     margin: 0;
-    cursor: pointer;
     width: min-content;
 }
 
 .navbar a:hover,
 .subnav:hover .subnavbtn {
     /* background-color: rgb(0,7,20); */
-    background-image: linear-gradient(to bottom, rgb(0,7,20)d , yellow);
+    background-image: linear-gradient(to bottom, rgb(0, 7, 20)d, yellow);
 }
 
 .subnav-content {
     display: none;
     position: absolute;
     background-color: inherit;
-    /* background-image: linear-gradient(to bottom, rgb(0,7,20)d , yellow); */
-    max-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    max-width: 2rem;
+    /* box-shadow: 0px 8px 16px 0px rgba(248, 226, 25, 0.2); */
     z-index: 1;
 }
-
 
 .subnav-content a {
     float: left;
@@ -98,29 +95,17 @@ video {
 .navlogo {
     float: left;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 0.4rem;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 0.275rem 0.3rem;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
 }
 
-.subnavbtn1 {
-    float: left;
-    overflow: hidden;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    cursor: pointer;
-}
+
 
 #lDiv {
     float: left;
@@ -132,28 +117,28 @@ video {
 }
 
 #tDiv {
-    margin-top: 100px; 
+    margin-top: 2rem;
 }
 
 #bDiv {
-    margin-top: 300px; 
+    margin-top: 5rem;
 }
 
 #rDiv {
     position: absolute;
     right: 0;
     bottom: 0;
+    height: 20rem;
     width: 50%
 }
-
 
 
 #myVideo {
     position: absolute;
     right: 0px;
     bottom: 0Px;
-    height:408px;    
-    width:508px;
+    height: 10rem;
+    width: 12rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -161,8 +146,9 @@ video {
         position: absolute;
         right: 0px;
         bottom: 0Px;
-        height:54px;    
-        width:54px;
+        height: 54px;
+        width: 54px;
+
     }
 
     #lDiv {
@@ -173,38 +159,38 @@ video {
         margin: auto;
         width: 100%;
     }
-    
+
     #rDiv {
         /* position: absolute; */
-        float:left;
-        /* right: 0;
-        bottom: 0; */
+        float: left;
+        top: 0px;
+        left: 0px;
         width: 100%
     }
 
     #tDiv {
-        margin-top: 0px; 
+        margin-top: 0px;
     }
 
     #bDiv {
-        margin-top: 0px; 
+        margin-top: 0px;
     }
 
-  }
+}
 
 
 .button {
     background-color: yellow;
     border: none;
-    font-family:'Britannic';
+    font-family: 'Britannic';
     color: black;
-    font-weight:bolder;
+    font-weight: bolder;
     padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
-
 }
+

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- [if lt IE 9]><script src=”http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script> -->
     <title>Ai-mmi website</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -12,6 +13,21 @@
     <link rel="stylesheet" href="main.css">
     <script src="./app.js"></script>
     <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 10 * (clientWidth / 320) + 'px';//html font-size 16
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
 </head>
 
@@ -21,22 +37,22 @@
             <img src="images/logo.png" height="25px" width="80px" alt="Company Logo">
         </div>
         <div class="subnav">
-            <button class="subnavbtn1" onclick="myfunction()">Log in</button>
+            <button class="subnavbtn" onclick="window.location.href = '#.html';" style="cursor: pointer;">Login</button>
         </div>
 
         <div class="subnav">
             <button class="subnavbtn">En</button>
             <div class="subnav-content">
-                <a href="#team">En</a>
-                <a href="#team">简体</a>
-                <a href="#careers">繁體</a>
+                <a href="#En">En</a>
+                <a href="#simplified">简体</a>
+                <a href="#chinese">繁體</a>
             </div>
         </div>
         <div class="subnav">
             <button class="subnavbtn"><i class="flag-icon flag-icon-us"></i></button>
             <div class="subnav-content">
                 <a href="#team"><i class="flag-icon flag-icon-us"></i></a>
-                <a href="#team"><i class="flag-icon flag-icon-cn"></i></a>
+                <a href="#career"><i class="flag-icon flag-icon-cn"></i></a>
             </div>
         </div>
 
@@ -60,13 +76,13 @@
 
     <div id="lDiv">
         <div id="tDiv">
-            <h1 style="font-size: 2rem;">Migration Gets Easier</h1>
-            <h1 style="font-size: 5rem;">AI-mmi</h1>
+            <h1 style="font-size: 1em;">Migration Gets Easier</h1>
+            <h1 style="font-size: 2em;">AI-mmi</h1>
         </div>
-       
+
         <div id="bDiv">
-            <h1 style="font-size: 1.5rem;">Get help from<br /></h1>
-            <h1 style="font-size: 1rem;">Your AI robotic Immigration Consultant <br /></h1>
+            <h1 style="font-size: 1em;">Get help from<br /></h1>
+            <h1 style="font-size: 0.5em;">Your AI robotic Immigration Consultant <br /></h1>
             <br />
             <button class="button" onclick="window.location.href = 'main.html';">Start Here</button>
 
