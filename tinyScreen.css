@@ -25,7 +25,7 @@ body {
     background: url("./images/Toronto0.jpg") no-repeat;
     background-size: cover;
     overflow-x: hidden;
-    position: absolute; 
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -122,7 +122,7 @@ video {
     text-align: center;
     margin: auto;
     width: 100%;
-    
+
 }
 
 #rDiv {
@@ -159,8 +159,8 @@ video {
 
 #myVideo {
     position: absolute;
-    align-content: center;
-    bottom: 0Px;
+    left: 25rem;
+    bottom: 25rem;
     height: 16rem;
     width: 25rem;
 }
