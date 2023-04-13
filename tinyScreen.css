@@ -159,10 +159,10 @@ video {
 
 #myVideo {
     position: absolute;
-    left: 25rem;
+    left: 15rem;
     bottom: 25rem;
     height: 16rem;
-    width: 25rem;
+    width: 30rem;
 }
 
 .button {
